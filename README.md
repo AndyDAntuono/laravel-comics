@@ -29,6 +29,10 @@ Numero minimo di push: 10
 - creo il file app.blade.php.
 - inserisco il file comics.php (anche questo otteuto tramite slack) dentro la cartella config.
 - cancello il file welcome.blade.php e lo sostiuico con il file home.blade.php
+- creo la sottocartella partials (da inserire all'interno della sottocartella views). Al suo interno creo il file header.blade.php, dove copierò ed incollerò la porzione di header dal file app.blade.php.
+- rinomino il file comics.php in db.php e lo modifico in modo fi avere un gruppo di array associativi.
+- creo il file products (lo chiamo così perché altrimenti mi confonodo gli array associativi) all'interno della cartella views.
+- modifico header.blade.php per migliorara la barra di navigazione.
 
 PS: se i passaggi del readme risultano strani è perché inj un primo momento avevo dimenticato di compilare la mia parte personale di questo file e l'ho scritta basandomi sui nomi che ho dato ai miei push.
 PPS: non sapendo se il testo originale di questo readme fosse importante o meno, ho preferito lasciarlo e scrivere la mia parte personale al di sopra di esso.
