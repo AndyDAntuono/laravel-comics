@@ -1,1 +1,63 @@
 @import '~bootstrap/scss/bootstrap';
+
+/*classi di header.blade.php*/
+
+.nav-link {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-item.active .nav-link {
+    color: blue;
+    border-bottom: 3px solid blue;
+}
+
+/*classi di footer.blade.php*/
+
+.icon_and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon_and-text img {
+    /*ho dovuto ricorrere alle dimensioni fisse poiché quelle originali delle icone forniteci sono diverse*/
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.bg-footer {
+    background-image: url('resources/img/dc-logo-bg.png'), url('resources/img/footer-bg.jpg');
+    background-position: right, left top;
+    background-repeat: no-repeat, repeat;
+    background-size: 30%, cover;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(165, 165, 165);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(38, 125, 175);
+}
+
+.bg-bottom-footer {
+    background-color: rgb(58, 58, 58);
+}
+
+.sign-up_button {
+    border: 3px solid blue;
+    color: white;
+}
+
+.follow-us {
+    font-weight: bold;
+    color: blue;
+}
+
+.footer-icon {
+    filter: invert(1) brightness(1.2) contrast(1.5);
+}
