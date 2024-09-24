@@ -1,3 +1,38 @@
+/*CONSEGNA*/
+
+esercizio di oggi: nome repo: laravel-comics
+Create un nuovo progetto Laravel.
+Concentratevi sul layout: create un file di layout in cui inserire la struttura comune di tutte le pagine del sito web (tag head, tag body, ...) eventualmente includendo header e footer tramite due partials. Create poi una rotta per visualizzare la lista di tutti i fumetti recuperati da un file inserito nella cartella config. Non concentratevi sulla grafica, intanto strutturate il tutto come descritto sopra, utilizzate al limite le classi predefinite di bootstrap. Non perdete tempo nei dettagli!
+BONUS 1: replicate fedelmente la pagina utilizzando Sass.
+BONUS 2: Create più pagine istituzionali che condividono lo stesso layout
+In allegato trovate lo zip con il materiale per svolgere l'esercizio. Se per qualche motivo il file presente nell'array ha le immagini che non dovessero funzionare comunicatelo ai tutor.
+Vi lascio anche la steplist che abbiamo cominciato a creare ieri.
+Scrivete sempre il file README.md in con la traccia dell'esercizio.
+Numero minimo di push: 10
+
+/*SOLUZIONE*/
+
+- Creo la repo secondo le istruzioni di Fabrizio Mastrobattista, che riporto qui di seguito:
+
+    INSTALLAZIONE E CONFIGURAZIONE DI LARAVEL
+        1 - composer create-project laravel/laravel:^9.2 NOME REPO/PROGETTO (metto :^9.2 per indicare la versione di laravel da installare)
+        2 - Entro nella cartella con il terminale e digito code . (apro il progetto in vscode in generale)
+        3 - Creo la repo da qui
+        4 - Lancio il comando php artisan serve per creare un server virtuale nel quale girerà la mia applicazione
+        5 - Lanciare il comando composer require pacificdev/laravel_9_preset per installare il pacchetto
+        6 - Lanciare il comando php artisan preset:ui bootstrap
+        7 - Lanciare il comando npm i
+        8 - Rinominare il file vite.config.js in vite.config.mjs OPPURE aggiungere/modificare in "type": "module" nel file package.json
+        9 - eseguire il comando npm run dev
+
+- creo la cartella img contentente le immagini passatemi sempre da Fabrizio tramite slack.
+- creo il file app.blade.php.
+- inserisco il file comics.php (anche questo otteuto tramite slack) dentro la cartella config.
+- cancello il file welcome.blade.php e lo sostiuico con il file home.blade.php
+
+PS: se i passaggi del readme risultano strani è perché inj un primo momento avevo dimenticato di compilare la mia parte personale di questo file e l'ho scritta basandomi sui nomi che ho dato ai miei push.
+PPS: non sapendo se il testo originale di questo readme fosse importante o meno, ho preferito lasciarlo e scrivere la mia parte personale al di sopra di esso.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
